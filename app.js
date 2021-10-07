@@ -1,5 +1,5 @@
 
-import { add, sub, mult } from './calculations.js';
+import { add, sub, mult, divide } from './calculations.js';
 
 
 // set event listeners 
@@ -46,4 +46,18 @@ multButton.addEventListener('click', () => {
     const sum = mult(num1, num2);
 
     multAnswer.textContent = sum;
+});
+
+const divideNumber1 = document.getElementById('divide-number-1');
+const divideNumber2 = document.getElementById('divide-number-2');
+const divideButton = document.getElementById('divide-button');
+const divideAnswer = document.getElementById('divide-answer');
+
+divideButton.addEventListener('click', () => {
+    const num1 = +divideNumber1.value;
+    const num2 = +divideNumber2.value;
+
+    const sum = divide(num1, num2);
+
+    divideAnswer.textContent = sum;
 });
