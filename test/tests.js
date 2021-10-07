@@ -7,13 +7,11 @@ const test = QUnit.test;
 test('adds two numbers', (expect) => {
     //Arrange
     // Set up your arguments and expectations
-    const x = 5;
-    const y = 3;
-    const expected = 8;
+    const expected = 13;
     
     //Act 
     // Call the function you're testing and set the result to a const
-    const actual = add(x, y); // use your function here
+    const actual = add(4, 8); // use your function here
 
     //Expect
     // Make assertions about what is expected versus the actual result
