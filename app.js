@@ -1,5 +1,5 @@
 
-import { add, sub } from './calculations.js';
+import { add, sub, mult } from './calculations.js';
 
 
 // set event listeners 
@@ -32,4 +32,18 @@ subButton.addEventListener('click', () => {
     const sum = sub(num1, num2);
 
     subAnswer.textContent = sum;
+});
+
+const multNumber1 = document.getElementById('mult-number-1');
+const multNumber2 = document.getElementById('mult-number-2');
+const multButton = document.getElementById('mult-button');
+const multAnswer = document.getElementById('mult-answer');
+
+multButton.addEventListener('click', () => {
+    const num1 = +multNumber1.value;
+    const num2 = +multNumber2.value;
+
+    const sum = mult(num1, num2);
+
+    multAnswer.textContent = sum;
 });
