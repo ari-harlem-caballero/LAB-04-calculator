@@ -10,6 +10,10 @@ main {
     padding: 30px;
 }
 
+section {
+    display: contents;
+}
+
 header {
     background-color: #A2D7D2;
     height: 110px;
