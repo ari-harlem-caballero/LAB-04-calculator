@@ -13,43 +13,48 @@
 
 <body>
     <header>
-        <h1>My App</h1>
+        <h1>Free Calculations</h1>
         <img src="assets/big-logo.png" />
     </header>
     
     <main>
-
-       <section>
+        <div class="calculator-boxes">
+        <section class="addition">
+            <h3>addition</h3>
            <input id="add-number-1" value="34">
            +
-           <input id='add-number-2' value="12">;
-           <button id="add-button">=</button>;
-           <span id="add-answer">?</span>;
-       </section>
+           <input id='add-number-2' value="12">
+           <button id="add-button">calculate</button>
+           <span class="answers" id="add-answer"></span>
+        </section>
     
-       <section>
+        <section class="subtraction">
+            <h3>subtraction</h3>
             <input id="sub-number-1" value="25">
             -
-            <input id='sub-number-2' value="10">;
-            <button id="sub-button">=</button>;
-            <span id="sub-answer">?</span>;
+            <input id='sub-number-2' value="10">
+            <button id="sub-button">calculate</button>
+            <span class="answers" id="sub-answer"></span>
         </section>
 
-        <section>
+        <section class="multiplication">
+            <h3>multiplication</h3>
             <input id="mult-number-1" value="4">
             *
-            <input id='mult-number-2' value="20">;
-            <button id="mult-button">=</button>;
-            <span id="mult-answer">?</span>;
+            <input id='mult-number-2' value="20">
+            <button id="mult-button">calculate</button>
+            <span class="answers" id="mult-answer"></span>
         </section>
 
-        <section>
+        <section class="division">
+            <h3>division</h3>
             <input id="divide-number-1" value="108">
             /
-            <input id="divide-number-2" value="9">;
-            <button id="divide-button">=</button>;
-            <span id="divide-answer">?</span>;
+            <input id="divide-number-2" value="9">
+            <button id="divide-button">calculate</button>
+            <span class="answers" id="divide-answer"></span>
         </section>
+        </div>
     </main>
 
     <footer>
